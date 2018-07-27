@@ -5,22 +5,5 @@ html
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    nav.navbar.is-transparent.has-shadow.is-spaced
-      .navbar-brand
-        a.navbar-item(href='https://bulma.io')
-          include includes/logo.pug
-        .navbar-burger.burger(data-target='navbarExampleTransparentExample')
-          span
-          span
-          span
-      #navbarExampleTransparentExample.navbar-menu
-        .navbar-start
-          a.navbar-item(href='https://bulma.io/')
-            | Home
-          a.navbar-item(href='https://bulma.io/')
-            | Work
-          a.navbar-item(href='https://bulma.io/')
-            | About
-          a.navbar-item(href='https://bulma.io/')
-            | Contact
+    include includes/nav.pug
     block content
